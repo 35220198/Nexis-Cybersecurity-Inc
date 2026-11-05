@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & SOC Hotline | Nexis Cybersecurity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">NEXIS</span>CYBER
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="team.html">Leadership & Red Team</a>
+                <a href="platform.html">Platform</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary desktop-only">SOC Portal</a>
+                <button class="mobile-toggle" id="mobileToggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="banner-container">
+            <span class="section-tag">24/7 INCIDENT RESPONSE</span>
+            <h1>Initiate Emergency Response or Consultation</h1>
+            <p>Under active attack? Reach out directly to our global emergency breach containment team.</p>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Global Command Center</h2>
+                    <p>Our Security Operations Center (SOC) operates around the clock for emergency response and enterprise evaluations.</p>
+                    
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>Austin SOC Headquarters</strong>
+                            <p>100 Cyber Way, Suite 1200, Austin, TX 78701</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="icon">🚨</span>
+                        <div>
+                            <strong>24/7 Emergency Incident Hotline</strong>
+                            <p>+1 (800) 555-9111</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <strong>Encrypted Communications (PGP)</strong>
+                            <p>secure-inbound@nexiscyber.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form onsubmit="handleContact(event)">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" required placeholder="e.g., Sarah Vance">
+                        </div>
+                        <div class="form-group">
+                            <label>Corporate Email</label>
+                            <input type="email" required placeholder="sarah@enterprise.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Primary Urgency Level</label>
+                            <select>
+                                <option>Active Ransomware / Incident Containment (CRITICAL)</option>
+                                <option>Red Team Penetration Testing Inquiry</option>
+                                <option>XDR / Cloud Security Evaluation</option>
+                                <option>General Security Briefing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Environment & Threat Context</label>
+                            <textarea rows="4" required placeholder="Detail your network scope, compromised systems, or evaluation goals..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Dispatch Emergency Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><span class="logo-accent">NEXIS</span>CYBER</a>
+                <p>Protecting critical enterprise assets through intelligent threat telemetry and proactive military-grade security.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="team.html">Leadership</a>
+                    <a href="platform.html">Platform</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Global SOC Headquarters</h4>
+                    <span>📍 100 Cyber Way, Suite 1200, Austin, TX</span>
+                    <span>📞 +1 (800) 555-NEXIS</span>
+                    <span>✉️ soc@nexiscyber.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Nexis Cybersecurity Inc. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

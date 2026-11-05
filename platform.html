@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Architecture | Nexis Cybersecurity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">NEXIS</span>CYBER
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="team.html">Leadership & Red Team</a>
+                <a href="platform.html" class="active">Platform</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary desktop-only">SOC Portal</a>
+                <button class="mobile-toggle" id="mobileToggle" onclick="toggleMenu()" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="banner-container">
+            <span class="section-tag">NEXT-GEN DEFENSE ENGINE</span>
+            <h1>The Nexis Security Cloud</h1>
+            <p>Built on zero-trust microsegmentation, eBPF kernel instrumentation, and hyper-scalable SIEM architecture.</p>
+        </div>
+    </div>
+
+    <section class="platform-section">
+        <div class="section-container">
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <div class="platform-icon">⚡</div>
+                    <h3>eBPF Kernel Telemetry</h3>
+                    <p>Sub-millisecond packet and process monitoring directly at the Linux & Windows kernel level without performance overhead.</p>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">🤖</div>
+                    <h3>Autonomous SOAR Playbooks</h3>
+                    <p>Pre-configured security orchestration and automated response workflows that neutralize threats in milliseconds.</p>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">🔐</div>
+                    <h3>Quantum-Resistant Encryption</h3>
+                    <p>Future-proofed data transmission using lattice-based post-quantum cryptography algorithms.</p>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">📊</div>
+                    <h3>Hyper-Scale SIEM Ingestion</h3>
+                    <p>Scales effortlessly to process over 100 Billion telemetry log lines per day with petabyte-scale searchability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><span class="logo-accent">NEXIS</span>CYBER</a>
+                <p>Protecting critical enterprise assets through intelligent threat telemetry and proactive military-grade security.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="solutions.html">Solutions</a>
+                    <a href="team.html">Leadership</a>
+                    <a href="platform.html">Platform</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Global SOC Headquarters</h4>
+                    <span>📍 100 Cyber Way, Suite 1200, Austin, TX</span>
+                    <span>📞 +1 (800) 555-NEXIS</span>
+                    <span>✉️ soc@nexiscyber.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Nexis Cybersecurity Inc. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
